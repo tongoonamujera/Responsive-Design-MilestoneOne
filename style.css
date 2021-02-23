@@ -1,0 +1,63 @@
+
+/* header section styles */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  width: 98.9vw;
+}
+
+/* first navsec */
+
+.firsrtnav {
+ background-color: black;
+ color: white;
+}
+
+.firsrtnav > nav {
+  display: flex;
+  width: 97.5vw;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.firstNavlist {
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-between;
+}
+
+.secNavList {
+  display: flex;
+  justify-content: right;
+}
+
+nav > ul {
+  list-style: none;
+}
+nav > ul > li {
+padding-left: 10px;
+}
+
+/* sec nav styles*/
+
+.secnav {
+  display: flex;
+  background-color: ivory;
+  width: 97.5vw;
+  justify-content: space-between;
+}
+
+.navimg {
+  width: 20px;
+  height: 20px;
+}
+
+.secnavlist {
+  display: flex;
+}
+
+.thirdNav {
+  background-color: rgb(247, 191, 88);
+}
