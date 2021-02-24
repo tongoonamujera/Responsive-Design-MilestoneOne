@@ -1,4 +1,6 @@
-
+body {
+  margin: 0;
+}
 /* header section styles */
 
 .header {
@@ -76,7 +78,7 @@ padding-left: 10px;
 .thirdNav {
   background-color: rgb(247, 191, 88);
   height: 5vh;
-  margin: 15px;
+  margin-top: 15px;
 }
 
 .thirdNav > p {
@@ -107,10 +109,12 @@ li  > a {
   margin-top: 90px;
   grid-area: highlights;
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 4fr 2fr;
   grid-template-areas: 'firstHighlightssec secHighlightssec';
   grid-gap: 5px;
   height: 56vh;
+  color: white;
+  font-stretch: ultra-expanded;
 }
 
 .firstHighlightssec {
@@ -135,6 +139,11 @@ li  > a {
   color: white;
 }
 
+.sicon {
+  width: 10px;
+  height: 10px;
+}
+
 .secHighlightssec {
   grid-area: secHighlightssec;
   display: grid;
@@ -145,6 +154,7 @@ li  > a {
   background: linear-gradient(to bottom, rgba(187, 180, 180, 0.3), rgba(119, 117, 117, 0.3)), url('images/background2.webp');
   background-size: 100%;
 }
+
 .divTwo {
   background-image: url('images/background3.webp');
   background-size: 100%;
@@ -173,6 +183,7 @@ li  > a {
 
 .fundingp {
   border-top: 1px solid rgb(245, 181, 181);
+  font-size: 13px;
 }
 
 /* latestFundingTwo */
@@ -182,6 +193,10 @@ li  > a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
+}
+
+.funding > img {
+  width: 290px;
 }
 
 /* ********footer section********* */
@@ -197,13 +212,26 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
-.social > img {
+.social > a > img {
   width: 25px;
   height: 25px;
   border: gray;
   border-radius: 20px;
+  margin-left: 25px;
+}
+
+.footerLinks {
+  padding-top: 10px;
+  margin-right: -14px;
+}
+
+.footerLinks > a {
+  text-decoration: none;
+  color: rgb(228, 222, 222);
+  font-size: 15px;
 }
 
 .lastFDiv {
