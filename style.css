@@ -151,7 +151,7 @@ li  > a {
 }
 
 .divOne {
-  background: linear-gradient(to bottom, rgba(187, 180, 180, 0.3), rgba(119, 117, 117, 0.3)), url('images/background2.webp');
+  background: linear-gradient(to bottom, rgba(187, 180, 180, 0.3), rgba(119, 117, 117, 0.3)), url('images/background2.webp') no-repeat;
   background-size: 100%;
 }
 
@@ -240,4 +240,98 @@ footer {
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+  }
+
+  .header {
+    display: flex;
+  }
+
+.highlights {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.firstHighlightssec {
+  font-weight: 500;
+  height: 25vh;
+}
+
+.bg {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 15px;
+}
+
+.secHighlightssec {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.latestFunding {
+  grid-area: latestFunding;
+  display: flex;
+  flex-direction: column;
+}
+
+.latestFundingOne {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.latestFundingTwo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.funding > img {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .highlights {
+    width: 100%;
+  }
+
+  .secHighlightssec {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .latestFunding {
+    width: 100%;
+  }
+
+  .funding > img {
+    width: 100%;
+  }
+
 }
