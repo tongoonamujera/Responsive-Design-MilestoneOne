@@ -314,9 +314,15 @@ h1 {
 }
 
 .latestFunding {
+  margin-top: 90px;
   grid-area: latestFunding;
   display: flex;
   flex-direction: column;
+}
+
+.highDiv > img {
+  width: 50px;
+  height: 20px;
 }
 
 .latestFundingOne {
