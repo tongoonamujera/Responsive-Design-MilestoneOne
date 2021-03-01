@@ -8,6 +8,7 @@ Live Demo at https://tongoonamujera.github.io/Responsive-Design-MilestoneOne/
 
 
 Author: Tongoona Mujera
+
 twitter: @tongomujera
 github : @tongoonamujera
 
