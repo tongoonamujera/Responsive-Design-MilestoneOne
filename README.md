@@ -1,15 +1,15 @@
 # Responsive-Design-MilestoneOne
 
-We were asked to make a clone of a New York Times article page using the following concepts: Embedding images The box model Flexbox Positioning
+In this project, we were asked to replicate the archived version of the website The Next Web(https://perma.cc/M5ZV-Q2D6). The main goal of the project is to apply responsive design techniques so that the website behaves differently depending on the size of the screen where the website is displayed.
 
-Project specifications can be found at https://www.theodinproject.com/courses/html5-and-css3/lessons/positioning-and-floating-elements
-
-Project requirements: clean, code, semantic HTML, aside tag for editor's picks, use float, flex and grid techniques.
+Project requirements: clean code, semantic HTML. In the first milestone, we were asked to prepare the tools to develop this website and will create 4 sections using media queries such that the project fit to different screen sizes like mobile, tablet and desktop.
 
 Live Demo at https://tongoonamujera.github.io/Responsive-Design-MilestoneOne/
 
 
 Author: Tongoona Mujera
+twitter: @tongomujera
+github : @tongoonamujera
 
 Contributing reviews, issues, and feature requests are welcomed!
 
