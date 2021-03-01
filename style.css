@@ -98,7 +98,7 @@ li > a {
   display: grid;
   width: 100%;
   height: auto;
-  grid-template-rows: 0.5fr 7fr 2fr 1fr;
+  grid-template-rows: 15% 35% 33% 17%;
   grid-template-areas:
     'header'
     'highlights'
@@ -109,7 +109,7 @@ li > a {
 /* ****highlights section**** */
 
 .highlights {
-  margin-top: 90px;
+  margin-top: 0;
   grid-area: highlights;
   display: grid;
   grid-template-columns: 4fr 2fr;
@@ -283,6 +283,11 @@ footer {
     overflow-y: scroll;
   }
 
+  .containerDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
   .header {
     display: flex;
     flex-direction: column;
@@ -296,7 +301,15 @@ footer {
     width: auto;
   }
 
+  .firstNavlist,
+  .secNavList,
+  .secnavlist {
+    height: 25px;
+    padding: 0 !important;
+  }
+
   .highlights {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -304,7 +317,7 @@ footer {
 
   .firstHighlightssec {
     font-weight: 500;
-    height: 25vh;
+    height: auto;
   }
 
   .bg {
@@ -322,7 +335,7 @@ footer {
   }
 
   .latestFunding {
-    margin-top: 90px;
+    margin-top: -170px;
     grid-area: latestFunding;
     display: flex;
     flex-direction: column;
@@ -363,7 +376,7 @@ footer {
 
   .containerDiv {
     display: grid;
-    grid-template-rows: 0.5fr 1fr 1fr 0.7fr;
+    grid-template-rows: 15% 35% 33% 17%;
     grid-template-areas:
       'header'
       'highlights'
@@ -552,7 +565,7 @@ footer {
     display: grid;
     width: 100%;
     height: auto;
-    grid-template-rows: 0.5fr 7fr 2fr 1fr;
+    grid-template-rows: 15% 35% 33% 17%;
     grid-template-areas:
       'header'
       'highlights'
@@ -563,7 +576,7 @@ footer {
   /* ****highlights section**** */
 
   .highlights {
-    margin-top: 90px;
+    margin-top: 0;
     grid-area: highlights;
     display: grid;
     grid-template-columns: 4fr 2fr;
@@ -642,9 +655,10 @@ footer {
   /* ***latest funding section*** */
 
   .latestFunding {
+    margin-top: -30%;
     grid-area: latestFunding;
     display: grid;
-    grid-template-rows: 0.5fr 4fr;
+    grid-template-rows: 0.1fr 1fr;
     grid-template-areas:
       'latestFundingOne'
       'latestFundingTwo';
