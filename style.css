@@ -128,7 +128,7 @@ li > a {
       rgba(240, 4, 4, 0.7),
       rgba(240, 4, 4, 0.7),
       rgba(100, 100, 100, 0.5)
-      ),
+    ),
     url('images/background1.jpg');
   background-size: 100%;
 }
