@@ -7,6 +7,18 @@ Project requirements: clean code, semantic HTML. In the first milestone, we were
 Live Demo at https://tongoonamujera.github.io/Responsive-Design-MilestoneOne/
 
 
+SCREENSHOT FOR MOBILE VIEW BELLOW
+![mobile](https://user-images.githubusercontent.com/69446259/109491401-32bd1b00-7a92-11eb-8f1c-294779639314.PNG)
+
+
+SCREENSHOT FOR TABLET VIEW
+![tablet](https://user-images.githubusercontent.com/69446259/109491726-a2cba100-7a92-11eb-860d-1354952800f3.PNG)
+
+
+SCREENSHOT FOR DESKTOP VIEW
+![desktop](https://user-images.githubusercontent.com/69446259/109491990-f5a55880-7a92-11eb-9570-b721ab81483a.PNG)
+
+
 Author: Tongoona Mujera
 
 twitter: @tongomujera
