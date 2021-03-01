@@ -41,10 +41,6 @@ body {
   border-left: 1px solid gray;
 }
 
-.secnav {
-  height: 4vh;
-}
-
 .secnav > nav {
   margin: 0;
 }
@@ -126,7 +122,8 @@ li > a {
 
 .firstHighlightssec {
   grid-area: firstHighlightssec;
-  background: linear-gradient(to bottom, rgba(240, 4, 4, 0.7),  rgba(240, 4, 4, 0.7), rgba(100, 100, 100, 0.5)),
+  background: 
+    linear-gradient(to bottom, rgba(240, 4, 4, 0.7),  rgba(240, 4, 4, 0.7), rgba(100, 100, 100, 0.5)), 
     url('images/background1.jpg');
   background-size: 100%;
 }
@@ -275,8 +272,8 @@ footer {
   body {
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    height: fit-content;
+    width: auto;
+    height: auto;
     flex-wrap: wrap;
     overflow-y: scroll;
   }
@@ -397,7 +394,7 @@ footer {
   }
 
   .firstHighlightssec {
-    grid-area:firstHighlightssec;
+    grid-area: firstHighlightssec;
   }
 
   .secHighlightssec {
@@ -446,13 +443,13 @@ footer {
     grid-area: footer;
     width: 768px;
   }
-
 }
 
 @media only screen and (min-width: 1024) and (max-width: 1440px) {
   body {
     margin: 0;
   }
+
   /* header section styles */
 
   .header {
@@ -497,7 +494,7 @@ footer {
   }
 
   .secnav > nav {
-  margin: 0;
+    margin: 0;
   }
 
   .secNavList {
@@ -508,13 +505,15 @@ footer {
   nav > ul {
     list-style: none;
   }
+
   nav > ul > li {
-  padding-left: 10px;
+    padding-left: 10px;
   }
 
-  /* sec nav styles*/
+  /* sec nav styles */
 
   .secnav {
+    height: 4vh;
     display: flex;
     background-color: ivory;
     width: 97.5vw;
@@ -541,7 +540,7 @@ footer {
     margin: 1px;
   }
 
-  li  > a {
+  li > a {
     text-decoration: none;
     color: rgb(185, 181, 181);
   }
@@ -552,8 +551,9 @@ footer {
     display: grid;
     width: 100%;
     height: auto;
-    grid-template-rows: 0.5fr 7fr 2fr fr;
-    grid-template-areas: 'header'
+    grid-template-rows: 0.5fr 7fr 2fr 1fr;
+    grid-template-areas:
+      'header'
       'highlights'
       'latestFunding'
       'footer';
@@ -575,7 +575,8 @@ footer {
 
   .firstHighlightssec {
     grid-area: firstHighlightssec;
-    background: linear-gradient(to bottom, rgba(240, 4, 4, 0.7),  rgba(240, 4, 4, 0.7), rgba(100, 100, 100, 0.5)), url('images/background1.jpg');
+    background: linear-gradient(to bottom, rgba(240, 4, 4, 0.7),  rgba(240, 4, 4, 0.7), rgba(100, 100, 100, 0.5)),
+      url('images/background1.jpg');
     background-size: 100%;
   }
 
