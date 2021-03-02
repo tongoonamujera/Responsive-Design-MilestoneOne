@@ -21,7 +21,7 @@ SCREENSHOT FOR DESKTOP VIEW
 
 Author: Tongoona Mujera
 
-Twitter: [@tongomujera](https://twitter.com/tongoonamujera)
+Twitter: [@tongomujera](https://twitter.com/tongomujera)
 
 GitHub: [@tongoonamujera](https://github.com/tongoonamujera)
 Contributing reviews, issues, and feature requests are welcomed!
