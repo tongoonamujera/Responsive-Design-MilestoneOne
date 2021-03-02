@@ -21,10 +21,9 @@ SCREENSHOT FOR DESKTOP VIEW
 
 Author: Tongoona Mujera
 
-twitter: @tongomujera
+Twitter: [@tongomujera](https://twitter.com/tongomujera)
 
-github : @tongoonamujera
-
+GitHub: [@tongoonamujera](https://github.com/tongoonamujera)
 Contributing reviews, issues, and feature requests are welcomed!
 
 Feel free to check the issues page.
@@ -32,4 +31,3 @@ Feel free to check the issues page.
 Show your support Give a star if you like this project!
 
 Acknowledgments to anyone whose code was used Inspiration etc. License This project is MIT licensed.
-
