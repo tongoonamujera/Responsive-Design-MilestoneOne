@@ -4,6 +4,10 @@ In this project, we were asked to replicate the archived version of the website 
 
 Project requirements: clean code, semantic HTML. In the first milestone, we were asked to prepare the tools to develop this website and will create 4 sections using media queries such that the project fit to different screen sizes like mobile, tablet and desktop.
 
+## Project ScreenShot
+
+![Capturetues](https://user-images.githubusercontent.com/69446259/109647546-1688af00-7b62-11eb-9da3-2dbdb1c9f228.PNG)
+
 ## Built With
 
 - html and css
@@ -13,9 +17,6 @@ Project requirements: clean code, semantic HTML. In the first milestone, we were
 
 [Live Demo Link](https://tongoonamujera.github.io/Responsive-Design-MilestoneOne/)
 
-
-SCREENSHOT FOR MOBILE VIEW BELLOW
-![mobile](https://user-images.githubusercontent.com/69446259/109491401-32bd1b00-7a92-11eb-8f1c-294779639314.PNG)
 
 
 ## Authors
