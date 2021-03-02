@@ -76,8 +76,8 @@ nav > ul > li {
 
 .thirdNav {
   background-color: rgb(247, 191, 88);
-  height: 5vh;
-  margin-top: 15px;
+  height: 4rem;
+  margin-top: -1%;
 }
 
 .thirdNav > p {
@@ -87,6 +87,7 @@ nav > ul > li {
 li > a {
   text-decoration: none;
   color: rgb(185, 181, 181);
+  font-size: 13px;
 }
 
 /* container Div */
@@ -95,7 +96,7 @@ li > a {
   display: grid;
   width: 100%;
   height: auto;
-  grid-template-rows: 15% 35% 33% 17%;
+  grid-template-rows: 15% 33% 33% 19%;
   grid-template-areas:
     'header'
     'highlights'
@@ -106,7 +107,7 @@ li > a {
 /* ****highlights section**** */
 
 .highlights {
-  margin-top: 0;
+  margin-top: -5%;
   grid-area: highlights;
   display: grid;
   grid-template-columns: 4fr 2fr;
@@ -128,6 +129,11 @@ li > a {
     ),
     url('images/background1.jpg');
   background-size: 100%;
+}
+
+svg {
+  width: 390px;
+  height: 100px;
 }
 
 .highDiv {
@@ -290,6 +296,16 @@ footer {
     top: 0;
   }
 
+  .secnav{
+    height: 25px;
+  }
+
+  li > a {
+    text-decoration: none;
+    color: rgb(185, 181, 181);
+    font-size: 8px;
+  }
+
   .firsrtnav {
     background-color: black;
     width: auto;
@@ -298,12 +314,12 @@ footer {
   .firstNavlist,
   .secNavList,
   .secnavlist {
-    height: 25px;
+    height: 20px;
     padding: 0 !important;
   }
 
   .highlights {
-    margin-top: 100px;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -311,7 +327,7 @@ footer {
 
   .firstHighlightssec {
     font-weight: 500;
-    height: auto;
+    height: 30%;
   }
 
   .bg {
@@ -329,7 +345,7 @@ footer {
   }
 
   .latestFunding {
-    margin-top: -170px;
+    margin-top: 0;
     grid-area: latestFunding;
     display: flex;
     flex-direction: column;
@@ -365,7 +381,7 @@ footer {
 
   .containerDiv {
     display: grid;
-    grid-template-rows: 15% 35% 33% 17%;
+    grid-template-rows: 10% 33% 38% 19%;
     grid-template-areas:
       'header'
       'highlights'
@@ -389,7 +405,7 @@ footer {
   /* highlights */
 
   .highlights {
-    margin-top: -15px;
+    margin-top: -1px;
     padding: 0;
     grid-area: highlights;
     width: 768px;
@@ -535,8 +551,8 @@ footer {
 
   .thirdNav {
     background-color: rgb(247, 191, 88);
-    height: 5vh;
-    margin-top: 15px;
+    height: 4rem;
+    margin-top: -1%;
   }
 
   .thirdNav > p {
@@ -554,7 +570,7 @@ footer {
     display: grid;
     width: 100%;
     height: auto;
-    grid-template-rows: 15% 35% 33% 17%;
+    grid-template-rows: 15% 33% 33% 19%;
     grid-template-areas:
       'header'
       'highlights'
