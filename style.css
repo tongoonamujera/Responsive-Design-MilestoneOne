@@ -320,9 +320,9 @@ footer {
 
   .secnav {
     height: 20px;
-    align-items: center;
     position: fixed;
     top: 0;
+    left: 0;
   }
 
   .thirdNav {
