@@ -1,0 +1,781 @@
+body,
+.secnav > nav {
+  margin: 0;
+}
+
+/* header section styles */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 3vh;
+  width: 98.9vw;
+  grid-area: header;
+  position: fixed;
+  top: 0;
+}
+
+svg {
+  width: 390px;
+  height: 100px;
+}
+
+.svg-mob > svg {
+  height: 20px;
+  width: 40px;
+}
+
+/* first navsec */
+
+.firsrtnav {
+  background-color: black;
+  color: white;
+  height: 4vh;
+}
+
+.firsrtnav > nav {
+  display: flex;
+  width: 97.5vw;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.firstNavlist {
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-between;
+  margin-top: 1px;
+}
+
+.fa-search,
+.fa-bars {
+  padding-top: 6px;
+  border-left: 1px solid gray;
+}
+
+.secNavList {
+  display: flex;
+  margin-top: 0;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+nav > ul > li {
+  padding-left: 10px;
+}
+
+/* sec nav styles */
+
+.secnav {
+  display: flex;
+  background-color: ivory;
+  width: 97.5vw;
+  justify-content: space-between;
+}
+
+.navimg {
+  width: 20px;
+  height: 20px;
+  padding-top: 10px;
+}
+
+.secnavlist {
+  display: flex;
+}
+
+.thirdNav {
+  background-color: rgb(247, 191, 88);
+  height: 4rem;
+  margin-top: -1%;
+}
+
+.thirdNav > p {
+  margin: 1px;
+}
+
+li > a {
+  text-decoration: none;
+  color: rgb(185, 181, 181);
+  font-size: 13px;
+}
+
+/* container Div */
+
+.containerDiv {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-rows: 15% 33% 33% 19%;
+  grid-template-areas:
+    'header'
+    'highlights'
+    'latestFunding'
+    'footer';
+}
+
+/* ****highlights section**** */
+
+.highlights {
+  margin-top: -5%;
+  grid-area: highlights;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-template-areas: 'firstHighlightssec secHighlightssec';
+  grid-gap: 5px;
+  height: 56vh;
+  color: white;
+  font-stretch: ultra-expanded;
+}
+
+.firstHighlightssec {
+  grid-area: firstHighlightssec;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(240, 4, 4, 0.7),
+      rgba(240, 4, 4, 0.7),
+      rgba(100, 100, 100, 0.5)
+    ),
+    url('images/background1.jpg');
+  background-size: 100%;
+}
+
+.highDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+div > img {
+  height: 120px;
+  width: 465px;
+  padding-top: 13px;
+}
+
+.highDivT {
+  padding-top: 10%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.bg {
+  font-size: 100px;
+  font-weight: 1000;
+  color: white;
+}
+
+.sicon {
+  width: 10px;
+  height: 10px;
+}
+
+.secHighlightssec {
+  grid-area: secHighlightssec;
+  display: grid;
+  grid-gap: 5px;
+}
+
+.divOne {
+  background: linear-gradient(to bottom, rgba(187, 180, 180, 0.3), rgba(119, 117, 117, 0.3)), url('images/background2.webp') no-repeat;
+  background-size: 100%;
+}
+
+.divOne > h1,
+.divTwo > h1 {
+  padding-top: 10%;
+}
+
+.divTwo {
+  background-image: url('images/background3.webp');
+  background-size: 100%;
+}
+
+/* ***latest funding section*** */
+
+.latestFunding {
+  grid-area: latestFunding;
+  display: grid;
+  grid-template-rows: 0.5fr 4fr;
+  grid-template-areas:
+    'latestFundingOne'
+    'latestFundingTwo';
+}
+
+.latestFundingOne > h1,
+.latestFundingOne > p {
+  color: red;
+}
+
+.latestFundingOne {
+  display: flex;
+  grid-area: latestFundingOne;
+  justify-content: space-between;
+}
+
+.fundingp {
+  border-top: 1px solid rgb(245, 181, 181);
+  font-size: 13px;
+}
+
+/* latestFundingTwo */
+
+.latestFundingTwo {
+  grid-area: latestFundingTwo;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.funding > img {
+  width: 290px;
+}
+
+/* ********footer section********* */
+
+footer {
+  grid-area: footer;
+}
+
+.socialDiv {
+  background-color: rgb(37, 33, 33);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social > a > i {
+  color: white;
+  width: 25px;
+  height: 25px;
+  border: gray;
+  border-radius: 20px;
+  margin-left: 25px;
+}
+
+.footerLinks {
+  padding-top: 10px;
+  margin-right: -14px;
+}
+
+.footerLinks > a {
+  text-decoration: none;
+  color: rgb(228, 222, 222);
+  font-size: 15px;
+}
+
+.lastFDiv {
+  background-color: black;
+  color: rgb(109, 105, 105);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.firstSpan {
+  background: yellow;
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+  }
+
+  .containerDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  svg {
+    width: 190px;
+    height: 60px;
+  }
+
+  .svg-mob > svg {
+    height: 30px;
+    width: 40px;
+    background-color: rgb(104, 99, 99);
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    position: fixed;
+    top: 0;
+  }
+
+  .firsrtnav {
+    visibility: collapse;
+  }
+
+  .secnav {
+    height: 20px;
+    position: fixed;
+    top: 0;
+  }
+
+  .thirdNav {
+    margin-top: 5px;
+    height: 25px;
+  }
+
+  li > a {
+    text-decoration: none;
+    color: rgb(185, 181, 181);
+    font-size: 8px;
+  }
+
+  .firstNavlist,
+  .secNavList,
+  .secnavlist {
+    height: 20px;
+    padding: 0 !important;
+  }
+
+  .highlights {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .firstHighlightssec {
+    font-weight: 500;
+    height: 30%;
+  }
+
+  .bg {
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  .secHighlightssec {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .latestFunding {
+    margin-top: 0;
+    grid-area: latestFunding;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .highDiv > img {
+    width: 50px;
+    height: 20px;
+  }
+
+  .latestFundingOne,
+  .latestFundingTwo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .funding > img {
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 430px) and (max-width: 768px) {
+  body {
+    width: 768px;
+    height: 97.5%;
+  }
+
+  .containerDiv {
+    display: grid;
+    grid-template-rows: 10% 33% 38% 19%;
+    grid-template-areas:
+      'header'
+      'highlights'
+      'latestFunding'
+      'footer';
+  }
+
+  /* header */
+
+  .header {
+    margin: 0;
+    padding: 0;
+    grid-area: header;
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+  }
+
+  .fa-bars,
+  .svg-mob > svg {
+    visibility: collapse;
+  }
+
+  /* highlights */
+
+  .highlights {
+    margin-top: -1px;
+    padding: 0;
+    grid-area: highlights;
+    width: 768px;
+    height: 30vh;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1.4fr;
+    grid-template-areas: 'firstHighlightssec secHighlightssec';
+  }
+
+  .firstHighlightssec {
+    grid-area: firstHighlightssec;
+  }
+
+  .secHighlightssec {
+    grid-area: secHighlightssec;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      'divOne'
+      'divTwo';
+  }
+
+  .divOne {
+    grid-area: divOne;
+  }
+
+  .divTwo {
+    grid-area: divTwo;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  .highDiv > img {
+    width: 200px;
+    height: 60px;
+  }
+
+  /* latest funding */
+
+  .latestFunding {
+    margin-top: -50px;
+    padding: 0;
+    grid-area: latestFunding;
+    width: 768px;
+  }
+
+  .funding > img {
+    width: 160px;
+  }
+
+  /* footer */
+  .footer {
+    margin: 0;
+    padding: 0;
+    grid-area: footer;
+    width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1024) and (max-width: 1440px) {
+  body {
+    margin: 0;
+  }
+
+  /* header section styles */
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    height: 3vh;
+    width: 98.9vw;
+    grid-area: header;
+    position: fixed;
+    top: 0;
+  }
+
+  .fa-bars,
+  .svg-mob > svg {
+    visibility: hidden;
+  }
+
+  /* first navsec */
+
+  .firsrtnav {
+    background-color: black;
+    color: white;
+    height: 3vh;
+  }
+
+  .firsrtnav > nav {
+    display: flex;
+    width: 97.5vw;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .firstNavlist {
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    margin-top: 1px;
+  }
+
+  .fa-search {
+    margin-right: -10px;
+    border-left: 1px solid gray;
+  }
+
+  .secnav > nav {
+    margin: 0;
+  }
+
+  .secNavList {
+    display: flex;
+    margin-top: 0;
+  }
+
+  nav > ul {
+    list-style: none;
+  }
+
+  nav > ul > li {
+    padding-left: 10px;
+  }
+
+  /* sec nav styles */
+
+  .secnav {
+    height: 4vh;
+    display: flex;
+    background-color: ivory;
+    width: 97.5vw;
+    justify-content: space-between;
+  }
+
+  .navimg {
+    width: 20px;
+    height: 20px;
+    padding-top: 10px;
+  }
+
+  .secnavlist {
+    display: flex;
+  }
+
+  .thirdNav {
+    background-color: rgb(247, 191, 88);
+    height: 4rem;
+    margin-top: -1%;
+  }
+
+  .thirdNav > p {
+    margin: 1px;
+  }
+
+  li > a {
+    text-decoration: none;
+    color: rgb(185, 181, 181);
+  }
+
+  /* container Div */
+
+  .containerDiv {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-rows: 15% 33% 33% 19%;
+    grid-template-areas:
+      'header'
+      'highlights'
+      'latestFunding'
+      'footer';
+  }
+
+  /* ****highlights section**** */
+
+  .highlights {
+    margin-top: -3%;
+    grid-area: highlights;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-areas: 'firstHighlightssec secHighlightssec';
+    grid-gap: 5px;
+    height: 56vh;
+    color: white;
+    font-stretch: ultra-expanded;
+  }
+
+  .firstHighlightssec {
+    grid-area: firstHighlightssec;
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(240, 4, 4, 0.7),
+        rgba(240, 4, 4, 0.7),
+        rgba(100, 100, 100, 0.5)
+      ),
+      url('images/background1.jpg');
+    background-size: 100%;
+  }
+
+  .highDiv {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div > img {
+    height: 120px;
+    width: 465px;
+    padding-top: 13px;
+  }
+
+  .highDivT {
+    padding-top: 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .bg {
+    font-size: 100px;
+    font-weight: 1000;
+    color: white;
+  }
+
+  .sicon {
+    width: 10px;
+    height: 10px;
+  }
+
+  .secHighlightssec {
+    grid-area: secHighlightssec;
+    display: grid;
+    grid-gap: 5px;
+  }
+
+  .divOne {
+    background: linear-gradient(to bottom, rgba(187, 180, 180, 0.3), rgba(119, 117, 117, 0.3)), url('images/background2.webp') no-repeat;
+    background-size: 100%;
+  }
+
+  .divOne > h1,
+  .divTwo > h1 {
+    padding-top: 10%;
+  }
+
+  .divTwo {
+    background-image: url('images/background3.webp');
+    background-size: 100%;
+  }
+
+  /* ***latest funding section*** */
+
+  .latestFunding {
+    margin-top: -30%;
+    grid-area: latestFunding;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas:
+      'latestFundingOne'
+      'latestFundingTwo';
+  }
+
+  .latestFundingOne > h1,
+  .latestFundingOne > p {
+    color: red;
+  }
+
+  .latestFundingOne {
+    display: flex;
+    grid-area: latestFundingOne;
+    justify-content: space-between;
+  }
+
+  .fundingp {
+    border-top: 1px solid rgb(245, 181, 181);
+    font-size: 13px;
+  }
+
+  /* latestFundingTwo */
+
+  .latestFundingTwo {
+    grid-area: latestFundingTwo;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+  }
+
+  .funding > img {
+    width: 290px;
+  }
+
+  /* ********footer section********* */
+
+  footer {
+    grid-area: footer;
+  }
+
+  .socialDiv {
+    background-color: rgb(37, 33, 33);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .social > a > i {
+    color: white;
+    width: 25px;
+    height: 25px;
+    border: gray;
+    border-radius: 20px;
+    margin-left: 25px;
+  }
+
+  .footerLinks {
+    padding-top: 10px;
+    margin-right: -14px;
+  }
+
+  .footerLinks > a {
+    text-decoration: none;
+    color: rgb(228, 222, 222);
+    font-size: 15px;
+  }
+
+  .lastFDiv {
+    background-color: black;
+    color: rgb(109, 105, 105);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .firstSpan {
+    background: yellow;
+  }
+}
