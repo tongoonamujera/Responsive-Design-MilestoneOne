@@ -303,7 +303,9 @@ footer {
     height: 30px;
     width: 40px;
     background-color: rgb(104, 99, 99);
-    margin-left: -10px;
+    position: fixed;
+    left: 0;
+    top: 0;
   }
 
   .header {
@@ -322,7 +324,6 @@ footer {
     height: 20px;
     position: fixed;
     top: 0;
-    left: 0;
   }
 
   .thirdNav {
