@@ -3,12 +3,20 @@ body,
   margin: 0;
 }
 
+h2 {
+  color: red;
+}
+
+section > img {
+  width: 290px;
+}
+
 /* header section styles */
 
 .header {
   display: flex;
   flex-direction: column;
-  height: 3vh;
+  height: 1vh;
   width: 98.9vw;
   grid-area: header;
   position: fixed;
@@ -30,7 +38,7 @@ svg {
 .firsrtnav {
   background-color: black;
   color: white;
-  height: 4vh;
+  height: auto;
 }
 
 .firsrtnav > nav {
@@ -107,11 +115,14 @@ li > a {
   display: grid;
   width: 100%;
   height: auto;
-  grid-template-rows: 15% 33% 33% 19%;
+  grid-template-rows: 3% 12% 20% 13% 22% 24% 6%;
   grid-template-areas:
     'header'
     'highlights'
+    'latestNews'
     'latestFunding'
+    'categories'
+    'latestDeals'
     'footer';
 }
 
@@ -191,6 +202,83 @@ div > img {
   background-size: 100%;
 }
 
+/* latest News Section */
+
+.latestNews {
+  grid-area: latestNews;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 1fr;
+  grid-template-areas:
+    'secHeading'
+    'latestnewsOne'
+    'latestNewsTwo';
+}
+
+.secHeading {
+  grid-area: secHeading;
+}
+
+.latestnewsOne {
+  grid-area: latestnewsOne;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-areas: 'sectionOne sectionTwo sectionThree sectionFour';
+}
+
+.sectionOne {
+  grid-area: sectionOne;
+}
+
+.sectionTwo {
+  grid-area: sectionTwo;
+}
+
+.sectionThree {
+  grid-area: sectionThree;
+}
+
+.sectionFour {
+  grid-area: sectionFour;
+}
+
+.sectionOne,
+.sectionTwo,
+.sectionThree,
+.sectionFour,
+.One,
+.Two,
+.Three,
+.Four {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.latestNewsTwo {
+  grid-area: latestNewsTwo;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-areas: 'One Two Three Four';
+}
+
+.One {
+  grid-area: One;
+}
+
+.Two {
+  grid-area: Two;
+}
+
+.Three {
+  grid-area: Three;
+}
+
+.Four {
+  grid-area: Four;
+}
+
 /* ***latest funding section*** */
 
 .latestFunding {
@@ -229,6 +317,73 @@ div > img {
 
 .funding > img {
   width: 290px;
+}
+
+/* Categories Section */
+
+.categories {
+  grid-area: categories;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'hardFork apps gear';
+}
+
+.hardFork {
+  grid-area: hardFork;
+}
+
+.apps {
+  grid-area: apps;
+}
+
+.gear {
+  grid-area: gear;
+}
+
+.lastUl > img {
+  margin-left: 0;
+  margin-right: 2px;
+}
+
+.lastUl {
+  list-style: none;
+}
+
+.lastUl > li {
+  border-bottom: 1px solid gray;
+}
+
+.lastUl > li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+}
+
+/* latest Deals Section */
+
+.latestDeals {
+  grid-area: latestDeals;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    'latestDealsOne'
+    'latestDealsTwo';
+}
+
+.latestDealsOne {
+  grid-area: latestDealsOne;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+span {
+  text-decoration-line: line-through;
+}
+
+.latestDealsTwo {
+  grid-area: latestDealsTwo;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* ********footer section********* */
@@ -351,6 +506,31 @@ footer {
     flex: 1;
   }
 
+  .latestNews,
+  .latestnewsOne,
+  .latestNewsTwo,
+  .categories,
+  .hardFork,
+  .apps,
+  .gear,
+  .latestDeals,
+  .latestDealsOne,
+  .latestDealsTwo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .hardFork,
+  .apps,
+  .gear {
+    margin-left: -6%;
+  }
+
+  section > img {
+    width: 100%;
+  }
+
   .firstHighlightssec {
     font-weight: 500;
     height: 30%;
@@ -407,11 +587,16 @@ footer {
 
   .containerDiv {
     display: grid;
-    grid-template-rows: 10% 33% 38% 19%;
+    width: 100%;
+    height: auto;
+    grid-template-rows: 3% 12% 20% 13% 22% 24% 6%;
     grid-template-areas:
       'header'
       'highlights'
+      'latestNews'
       'latestFunding'
+      'categories'
+      'latestDeals'
       'footer';
   }
 
@@ -439,7 +624,7 @@ footer {
     margin-top: -1px;
     padding: 0;
     grid-area: highlights;
-    width: 768px;
+    width: 100%;
     height: 30vh;
     padding-bottom: 100px;
     display: grid;
@@ -495,7 +680,7 @@ footer {
     margin: 0;
     padding: 0;
     grid-area: footer;
-    width: 768px;
+    width: 100%;
   }
 }
 
@@ -606,11 +791,14 @@ footer {
     display: grid;
     width: 100%;
     height: auto;
-    grid-template-rows: 15% 33% 33% 19%;
+    grid-template-rows: 3% 12% 20% 13% 22% 24% 6%;
     grid-template-areas:
       'header'
       'highlights'
+      'latestNews'
       'latestFunding'
+      'categories'
+      'latestDeals'
       'footer';
   }
 
